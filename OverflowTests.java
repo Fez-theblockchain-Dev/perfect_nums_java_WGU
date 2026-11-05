@@ -6,7 +6,7 @@
  * JDK -- no JUnit, Maven, or Gradle required:
  *
  * <pre>
- *   javac OverflowTests.java Main.java
+ *   javac OverflowTests.java main.java
  *   java OverflowTests
  * </pre>
  *
@@ -180,7 +180,7 @@ public class OverflowTests {
 
         check("Main.isPerfect(33550336) is true", Main.isPerfect(fifth), "5th perfect number");
         check("Main.isPerfect(8589869056) is true", Main.isPerfect(sixth), "6th perfect number");
-        check("Main.isPerfect(735134400) is false", Main.isPerfect(735134400L), "abundant, not perfect");
+        check("Main.isPerfect(735134400) is false", !Main.isPerfect(735134400L), "abundant, not perfect");
     }
 
     // ------------------------------------------------------------------

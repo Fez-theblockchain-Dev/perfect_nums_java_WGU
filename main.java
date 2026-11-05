@@ -51,6 +51,11 @@ class Main {
         }
     }
 
+    /** Shortcut so other classes (like OverflowTests) can call Main.isPerfect(n). */
+    static boolean isPerfect(long n) {
+        return PerfectSearch.isPerfect(n);
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
